@@ -10,7 +10,7 @@ source /root/ag-archlinux/functions.sh
 #####  INPUTS                       #####
 read -p "Enter your username: " PERSONAL_ACCOUNT
 #####  BASH COMPLETION              #####	
-pacman  --noconfirm --needed  -S bash-completion rxvt-unicode termite
+pacman  --noconfirm --needed  -S bash-completion
 #####  PERSONAL ACCOUNT             #####
 useradd -m -g users -G audio,video,network,wheel,storage -s /bin/bash $PERSONAL_ACCOUNT
 #####  PASSWORD OF PERSONAL ACCOUNT #####
@@ -31,7 +31,7 @@ sudo systemctl enable lightdm.service
 #####  I3                           #####
 sudo pacman --noconfirm --needed -S i3status i3-gaps i3blocks dmenu
 #####  PROGRAMS                     #####
-sudo pacman --noconfirm --needed -S ncmpcpp 	pulseaudio 	wget zathura firefox conky termite 
+sudo pacman --noconfirm --needed -S ncmpcpp pulseaudio 	wget zathura firefox conky termite rxvt-unicode
 #####  START                        #####
 startx
 echo "####################     INSTALLATION FINISHED     ####################"
