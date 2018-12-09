@@ -10,7 +10,7 @@ source /root/ag-archlinux/functions.sh
 #####  INPUTS                       #####
 read -p "Enter your username: " PERSONAL_ACCOUNT
 #####  BASH COMPLETION              #####	
-pacman  --noconfirm --needed  -S bash-completion
+pacman  --noconfirm --needed  -S bash-completion rxvt-unicode termite
 #####  PERSONAL ACCOUNT             #####
 useradd -m -g users -G audio,video,network,wheel,storage -s /bin/bash $PERSONAL_ACCOUNT
 #####  PASSWORD OF PERSONAL ACCOUNT #####
