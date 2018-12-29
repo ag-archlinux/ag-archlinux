@@ -27,10 +27,8 @@ else
 	if pacman -Qi $package &> /dev/null; then
 		echo "####################   "$package" HAS BEEN INSTALLED   ####################"
 	else
-		echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-		echo "#################### "$package" HAS NOT BEEN INSTALLED ####################"
+		RED='\033[0;31m'
+        NC='\033[0m'
+		echo -e "#################### ${RED}"$package"${NC} HAS NOT BEEN INSTALLED ####################"
 	fi
 fi
-
-
-echo "####################       INSTALLATION FINISHED       ####################"
