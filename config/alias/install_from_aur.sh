@@ -33,3 +33,5 @@ package_aur(){
 	    fi
     fi
 }
+read -p "AUR: " AUR
+package_aur $AUR
